@@ -8,7 +8,7 @@ import ru.netology.exception.NotFoundException;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductRepositoryTest {
-    private  ProductRepository repository = new ProductRepository();
+    private ProductRepository repository = new ProductRepository();
     private Book book1 = new Book(1, "name", 150, "author1", 150, 2020);
     private Book book2 = new Book(2, "name", 150, "author1", 150, 2020);
     private Book book3 = new Book(3, "name", 150, "author1", 150, 2020);
@@ -58,9 +58,7 @@ class ProductRepositoryTest {
         repository.save(book3);
         repository.save(book4);
 
-
         assertThrows(NotFoundException.class, () -> repository.removeById(5) );
-
     }
 
 }
