@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class TShirt extends Product{
+public class TShirt extends Product {
     private String colour;
     private String size;
 
